@@ -4,3 +4,4 @@ datasets
 openai
 wandb
 python-dotenv
+jsonlines
