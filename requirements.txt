@@ -1,0 +1,6 @@
+pandas
+numpy
+datasets
+openai
+wandb
+python-dotenv
