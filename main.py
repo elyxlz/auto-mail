@@ -8,7 +8,6 @@ import dotenv
 import os
 import time
 import sys
-import jsonlines
 
 dotenv.load_dotenv(override=True)
 
@@ -73,8 +72,6 @@ df = df.iloc[np.random.choice(len(df), data_amount)]
 
 print("Saving Data")
 df.to_json('data.jsonl', orient='records', lines=True)
-#with jsonlines.open('data_prepared.jsonl', 'w') as writer:
-#    writer.write_all(json)
 
 def find_length(cell): return len(cell)
 total = df.applymap(find_length).sum().sum()
